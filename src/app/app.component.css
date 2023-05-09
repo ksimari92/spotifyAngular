@@ -1,0 +1,22 @@
+.header {
+    grid-area: header;
+    background-color: aqua;
+}
+
+.toolbar {
+    grid-area: toolbar;
+    background-color: blue;
+}
+
+.contenido {
+    grid-area: contenido;
+    background-color: blueviolet;
+}
+
+.layout-grid {
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 1fr 2fr 2fr;
+    grid-template-columns: 0.5fr 1fr 1fr;
+    grid-template-areas: "header toolbar toolbar" "header contenido contenido" "header contenido contenido";
+}
